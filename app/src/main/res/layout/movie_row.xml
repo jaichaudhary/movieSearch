@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_VIEW_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_ID"
+        android:padding="12dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        
+        <ImageView
+            android:id="@+id/movie_image_ID"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:id="@+id/movie_name_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/movie_image_ID"
+            android:paddingLeft="10dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="title" />
+        <TextView
+            android:id="@+id/movie_release_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/movie_image_ID"
+            android:paddingLeft="10dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="release date"
+            android:layout_below="@id/movie_name_ID"/>
+        <TextView
+            android:id="@+id/movie_CATEGORY_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/movie_image_ID"
+            android:paddingLeft="10dp"
+            android:padding="5dp"
+            android:layout_centerHorizontal="true"
+            android:text="category"
+            android:layout_below="@id/movie_release_ID"/>
+    </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
